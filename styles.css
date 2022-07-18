@@ -26,10 +26,13 @@ header {
 }
 
 .header-container {
+  margin-left: 150px;
+  margin-right: 150px;
   height: 70px;
   /* pading-top:0px; */
-  padding-left: 10%;
-  padding-right: 10%;
+  /* padding-left: 10%; */
+  /* padding-right: 10%; */
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -44,7 +47,6 @@ header {
 
 .links-container ul {
   display: flex;
-  flex-direction: row;
 }
 
 .links-container .icon {
@@ -65,21 +67,20 @@ header {
 /* First Section */
 
 .themes {
-  /* width: 100%; */
   background-image: url("./Images/themes_background.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
   padding-top: 6%;
   padding-bottom: 8%;
+  display: flex;
+  justify-content: center;
 }
 
 .themes .content-wrap {
   color: white;
-  /* background-color: grey; */
   width: 100%;
-  /* margin: 0 auto; */
-  /* padding: 60px 0; */
+  text-align: center;
   display: flex;
   justify-content: center;
   padding-top: 100px;
@@ -87,35 +88,32 @@ header {
 
 .themes .content-wrap h1 {
   font-size: 55px;
-  margin: 0;
 }
 
 .themes .content-wrap h2 {
   font-size: 38px;
-  margin-top: 25px;
-  /* margin-bottom: 70px; */
+  margin-top: 0px;
 }
+
 .themes .content-wrap p {
   font-size: 15px;
   margin-bottom: 7%;
+  margin-top: 0;
 }
 
 .themes-container {
-  margin: 0;
-  line-height: 50px;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  /* justify-content: center; */
-  height: 470px;
+  min-height: 470px;
+  height: fit-content;
+  align-items: center;
 }
 
 .themes-container .buttons-container {
   display: flex;
   justify-content: space-between;
-  padding-left: 29%;
-  padding-right: 29%;
-  margin-top: 1%;
+  width: 300px;
+  margin-top: 20px;
 }
 
 .themes-container .buttons-container button {
@@ -144,22 +142,17 @@ header {
 /* Second Section */
 
 .demos {
-  /* height: fit-content; */
   text-align: center;
   padding-top: 60px;
   padding-right: 10%;
   padding-bottom: 10%;
   padding-left: 10%;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* padding-left: ; */
 }
 
 .demos h1 {
   font-size: 45px;
   margin-bottom: 0;
-  margin-top: 1%;
+  margin-top: 15px;
 }
 
 .demos p {
@@ -172,6 +165,7 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 5%;
   row-gap: 8%;
+  height: fit-content;
 }
 
 .demos .demos-container .demo-example .image-container {
@@ -181,23 +175,16 @@ header {
   position: relative;
 }
 
-.demos-example {
-  /* width: 25%; */
-  /* position: relative; */
-}
-
 .demos .demos-container .demo-example img:hover {
-  /* box-shadow: 5px 10px 8px #888888; */
-  /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
   box-shadow: 0 10px 20px rgb(14, 14, 14);
 }
+
 .demos .demos-container .demo-example img {
   left: 0;
   object-fit: cover;
   width: 100%;
   height: 100%;
   position: absolute;
-  /* box-shadow: 5px 10px 8px #888888; */
   box-shadow: 0 5px 15px rgb(39, 38, 38);
 }
 
@@ -253,15 +240,16 @@ header {
 /* Fourth Section */
 
 .custom-headers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding-top: 5%;
-  padding-bottom: 7%;
-  /* padding-left: */
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .custom-headers h1 {
   font-size: 37px;
   margin-bottom: 0%;
-  margin-top: 0%;
 }
 
 .custom-headers p {
@@ -269,38 +257,38 @@ header {
 }
 
 .img-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 50px;
+  column-gap: 30px;
+}
+.img-wrapper img {
+  justify-self: center;
 }
 
 /* Fith Section */
 
 .responsiveness {
   color: white;
-}
-
-.responsiveness .section-wrapper {
-  font-size: 20px;
-  padding-left: 22%;
-  padding-right: 15%;
-  padding-top: 5%;
-  padding-bottom: 5%;
   background-image: url("./Images/phone_img.jpg");
   background-position: center center;
   background-size: cover;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.responsiveness .section-wrapper {
+  font-size: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
   align-items: center;
+  width: fit-content;
 }
 
 .responsiveness .resp-content {
-  /* text-align: right; */
-  /* justify-content: right; */
-  margin-left: 10%;
-  width: 70%;
+  margin-right: 40px;
+  margin-left: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -316,6 +304,8 @@ header {
 .responsiveness .phone-img-cont img {
   border-radius: 40px;
   height: 500px;
+  margin-left: 40px;
+  /* margin-left: 400px; */
 }
 
 /* Sixth Section */
@@ -334,9 +324,10 @@ header {
 .posts-pages-img {
   margin-top: 3%;
   background-image: url("./Images/posts&pages.png");
-  background-size: cover;
-  padding: 25%;
+  /* background-size: cover; */
+  /* padding: 25%; */
   background-position: center center;
+  height: 800px;
 }
 
 /* Seventh Section */
@@ -345,13 +336,10 @@ header {
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding-top: 2%;
-  /* padding-bottom: 2%; */
 }
 
 .features .section-header {
   font-size: 40px;
-  margin-top: 2%;
 }
 
 .features .features-container {
@@ -451,8 +439,8 @@ header {
 }
 
 .features .content-wrap .text-container {
-  width: 35%;
-  margin-left: 7%;
+  width: 350px;
+  margin-left: 25px;
   text-align: left;
 }
 
@@ -521,7 +509,48 @@ header {
   background-position: bottom center;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 678px) {
+  .responsiveness .section-wrapper {
+    flex-direction: column;
+  }
+  .img-wrapper {
+    /* grid-template-columns: 1fr; */
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .content-wrap {
+    flex-direction: column;
+    max-width: fit-content;
+  }
+  .content-wrap .text-container {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .header-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .img-wrapper {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+  }
+  .demos .demos-container {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1615px) {
   .features-container-g {
     display: flex;
     flex-direction: column;
@@ -533,7 +562,6 @@ header {
     align-items: center;
   }
   .content-wrap {
-    /* display: flex; */
     justify-content: space-between;
     width: 800px;
   }
